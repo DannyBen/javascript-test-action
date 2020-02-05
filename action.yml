@@ -2,8 +2,12 @@ name: Javascript Test Action
 description: Testing Javascript Action
 
 inputs:
-  command:
-    description: Shell command to run
+  repo:
+    description: GitHub repository name (user/repo)
+    required: true
+
+  script:
+    description: Shell script to run
     required: true
 
 runs:

@@ -14,13 +14,6 @@ jobs:
 
     - name: Debug
       uses: ./
-      with: { command: 'ls /' }
-
-    - name: Debug
-      uses: ./
-      with: { command: 'touch hello.txt' }
-
-    - name: Debug
-      uses: ./
-      with: { command: 'ls' }
-
+      with: 
+        repo: DannyBen/javascript-test-action
+        script: test.sh
