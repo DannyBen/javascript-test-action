@@ -1,13 +1,11 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: Javascript Test Action
+description: Testing Javascript Action
+
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  command:
+    description: Shell command to run
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we we greeted you'
+
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: node12
+  main: index.js
