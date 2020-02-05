@@ -22,5 +22,5 @@ jobs:
 
     - name: Debug
       uses: ./
-      with: { command: 'ls; }
+      with: { command: 'ls' }
 
